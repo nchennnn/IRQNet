@@ -1,5 +1,5 @@
 # IRQNet
-**Official** implementation of IRQNet by mmsegmentation.
+Implementation of IRQNet. Please read [the document](https://mmsegmentation.readthedocs.io/en/latest/) first for using mmsegmentation.
 - ir_head.py: main network structure.
 - ir_hook.py: mmseg-style hook.
 - hr18_ir.py, irqnet_hr32_512x1024_80k_cityscapes.py, irqnet_hr32_512x512_160k_ade20k.py: mmseg-style config.
@@ -10,7 +10,7 @@
 - mmsegmentation 0.30
 
 ## Citation
-Refer to mmseg style code, thanks!
+Refer to the following, thanks!
 
 ```bibtex
 @misc{mmseg2020,
