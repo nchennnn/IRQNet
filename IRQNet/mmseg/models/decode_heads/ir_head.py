@@ -283,7 +283,7 @@ class IRHead(BaseDecodeHead):
         self.df = df
         self.featfocus = featfocus
 
-        super(IRHead, self).__init__(**kwargs)
+        super(IRHead, self).__init__(input_transform='multiple_select', **kwargs)
 
         self.conv_seg = None
         self.init_cfg = None
