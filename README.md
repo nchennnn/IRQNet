@@ -3,8 +3,8 @@ Implementation of IRQNet.
 
 ## Envs
 - CUDA 11.7
-- Pytorch 1.13
-- [mmsegmentation](https://github.com/open-mmlab/mmsegmentation/tree/0.x) 0.30.0
+- PyTorch 1.13
+- MMSegmentation 0.30.0
 
 ## Quick Start
 ### Installation
@@ -30,8 +30,8 @@ tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} [optional arguments]
 Please refer to "[train.md](https://github.com/nchennnn/IRQNet/blob/main/mmsegmentation-0.30.0/docs/en/train.md)" for training.
 
 
-## Citation
-Refer to the following, thanks!
+## Acknowledgments
+IRQNet is built with [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/tree/0.x). Thanks for their awesome work!
 
 ```bibtex
 @misc{mmseg2020,
