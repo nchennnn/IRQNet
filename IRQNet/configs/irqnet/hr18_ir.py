@@ -40,7 +40,6 @@ model = dict(
         wpe=True,
         df=True,
         featfocus=True,
-        wavel=True,
         in_channels=[18, 36, 72, 144],
         in_index=(0, 1, 2, 3),
         channels=256,
