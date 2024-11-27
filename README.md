@@ -1,19 +1,36 @@
 # IRQNet
-
-Implementation of IRQNet. Please read [the document](https://mmsegmentation.readthedocs.io/en/latest/) first for using mmsegmentation.
-
-- ir_head.py: main network structure.
-- ir_hook.py: mmseg-style hook.
-- hr18_ir.py, irqnet_hr32_512x1024_80k_cityscapes.py, irqnet_hr32_512x512_160k_ade20k.py: mmseg-style config.
+Implementation of IRQNet.
 
 ## Envs
-
-- CUDA11.7
+- CUDA 11.7
 - Pytorch 1.13
-- mmsegmentation 0.30
+- [mmsegmentation](https://github.com/open-mmlab/mmsegmentation/tree/0.x) 0.30.0
+
+## Quick Start
+### Installation
+```bash
+pip install -U openmim
+mim install mmcv-full
+
+pip install -v -e mmsegmentation-0.30.0
+```
+### Merge the IRQNet folder into the MMSegmentation folder
+```bash
+cp -r IRQNet/* mmsegmentation-0.30.0/
+```
+
+### Prepare dataset
+Please refer to "[dataset_prepare.md](https://github.com/nchennnn/IRQNet/blob/main/mmsegmentation-0.30.0/docs/en/dataset_prepare.md)" for dataset preparation.
+
+### Training
+```bash
+cd mmsegmentation-0.30.0
+tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} [optional arguments]
+```
+Please refer to "[train.md](https://github.com/nchennnn/IRQNet/blob/main/mmsegmentation-0.30.0/docs/en/train.md)" for training.
+
 
 ## Citation
-
 Refer to the following, thanks!
 
 ```bibtex
